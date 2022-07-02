@@ -537,6 +537,12 @@ func (this *HttpClient) WithHeader(k string, v string) *HttpClient {
 	return this
 }
 
+func (this *HttpClient) WithContext(context *context.Context) *HttpClient {
+	return this.WithOptions(map[interface{}]interface{}{
+		OPT_CONTEXT: context,
+	})
+}
+
 // Temporarily specify multiple headers of the current request.
 func (this *HttpClient) WithHeaders(m map[string]string) *HttpClient {
 	for k, v := range m {
