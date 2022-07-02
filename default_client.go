@@ -32,6 +32,7 @@ var Patch = defaultClient.Patch
 var WithOption = defaultClient.WithOption
 var WithOptions = defaultClient.WithOptions
 var WithHeader = defaultClient.WithHeader
+var WithContext = defaultClient.WithContext
 var WithHeaders = defaultClient.WithHeaders
 var WithCookie = defaultClient.WithCookie
 var Cookies = defaultClient.Cookies
